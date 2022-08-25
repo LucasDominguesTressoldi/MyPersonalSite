@@ -1,0 +1,30 @@
+header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 0em;
+  .search {
+    align-items: center;
+    display: flex;
+    a {
+      color: $font-color;
+      font-size: 1.2em;
+      margin: 0em 2em;
+    }
+    :hover {
+      opacity: 80%;
+      text-decoration-line: underline;
+      text-underline-offset: 0.8em;
+    }
+  }
+  .links {
+    align-items: center;
+    display: flex;
+    .buttons {
+      margin-left: 1em;
+    }
+    :hover {
+      opacity: 90%;
+    }
+  }
+}

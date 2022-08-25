@@ -1,0 +1,82 @@
+/* All main colors */
+body {
+  background: #202021;
+  box-sizing: border-box;
+  font-family: "Roboto", Tahoma, Verdana, sans-serif;
+}
+
+.main-container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 0em;
+}
+header .search {
+  align-items: center;
+  display: flex;
+}
+header .search a {
+  color: #FFF;
+  font-size: 1.2em;
+  margin: 0em 2em;
+}
+header .search :hover {
+  opacity: 80%;
+  text-decoration-line: underline;
+  text-underline-offset: 0.8em;
+}
+header .links {
+  align-items: center;
+  display: flex;
+}
+header .links .buttons {
+  margin-left: 1em;
+}
+header .links :hover {
+  opacity: 90%;
+}
+
+.home_section {
+  overflow: hidden;
+}
+.home_section .home_content {
+  background-image: url("../../components/programmer-illustration.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  justify-content: center;
+  margin: 0 auto;
+}
+.home_section .home_content .home_text {
+  color: #FFF;
+  line-height: 120%;
+}
+.home_section .home_content .home_text .hello {
+  font-size: 2em;
+  padding-bottom: 1.3em;
+}
+.home_section .home_content .home_text .name {
+  font-size: 5em;
+}
+.home_section .home_content .home_text .welcome {
+  font-size: 2em;
+  padding-top: 1.3em;
+}
+.home_section .home_content .home_links {
+  display: flex;
+  margin-top: 6em;
+}
+.home_section .home_content .home_links .buttons .button {
+  margin-left: 2em;
+  width: 25em;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,37 @@
+.home_section {
+  overflow: hidden;
+  .home_content {
+    background-image: url("../../components/programmer-illustration.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    justify-content: center;
+    margin: 0 auto;
+    .home_text {
+      color: $font-color;
+      line-height: 120%;
+      .hello {
+        font-size: 2em;
+        padding-bottom: 1.3em;
+      }
+      .name {
+        font-size: 5em;
+      }
+      .welcome {
+        font-size: 2em;
+        padding-top: 1.3em;
+      }
+    }
+    .home_links {
+      display: flex;
+      margin-top: 6em;
+      .buttons .button {
+        margin-left: 2em;
+        width: 25em;
+      }
+    }
+  }
+}
