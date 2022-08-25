@@ -35,3 +35,15 @@
     }
   }
 }
+@media screen and (max-width: 300px) {
+  .container {
+    display: none;
+  }
+  .home_content {
+    height: 50vh;
+    padding-top: 40px;
+  }
+  .home_section .home_links .buttons .button {
+    width: 150px;
+  }
+}

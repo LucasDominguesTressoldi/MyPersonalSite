@@ -41,6 +41,33 @@ header .links :hover {
   opacity: 90%;
 }
 
+@media screen and (max-width: 1080px) {
+  header .search a {
+    margin: 0em 1em;
+  }
+}
+@media screen and (max-width: 900px) {
+  header .search a {
+    margin: 0em 0.5em;
+  }
+}
+@media screen and (max-width: 600px) {
+  header .links .buttons {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  header .search {
+    display: block;
+    margin: 0 auto;
+  }
+  header .search .text-search {
+    display: none;
+  }
+  header .links {
+    display: none;
+  }
+}
 .home_section {
   overflow: hidden;
 }
@@ -77,6 +104,19 @@ header .links :hover {
 .home_section .home_content .home_links .buttons .button {
   margin-left: 2em;
   width: 25em;
+}
+
+@media screen and (max-width: 300px) {
+  .container {
+    display: none;
+  }
+  .home_content {
+    height: 50vh;
+    padding-top: 40px;
+  }
+  .home_section .home_links .buttons .button {
+    width: 150px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

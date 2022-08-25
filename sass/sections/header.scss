@@ -28,3 +28,48 @@ header {
     }
   }
 }
+
+@media screen and (max-width: 1080px) {
+  header {
+    .search {
+      a {
+        margin: 0em 1em;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  header {
+    .search {
+      a {
+        margin: 0em 0.5em;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    .links {
+      .buttons {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header {
+    .search {
+      display: block;
+      margin: 0 auto;
+      .text-search {
+        display: none;
+      }
+    }
+    .links {
+      display: none;
+    }
+  }
+}
