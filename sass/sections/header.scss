@@ -1,6 +1,7 @@
 header {
   align-items: center;
   display: flex;
+  height: 10vh;
   justify-content: space-between;
   padding: 1em 0em;
   .search {
@@ -26,6 +27,9 @@ header {
     :hover {
       opacity: 90%;
     }
+  }
+  .menu {
+    display: none;
   }
 }
 
@@ -59,12 +63,11 @@ header {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 524px) {
   header {
+    justify-content: space-between;
     .search {
       animation: logo-animation 2s ease-in-out infinite;
-      display: block;
-      margin: 0 auto;
       transform: translateY(0px);
       .text-search {
         display: none;
@@ -72,6 +75,9 @@ header {
     }
     .links {
       display: none;
+    }
+    .menu {
+      display: flex;
     }
   }
 }
@@ -81,7 +87,7 @@ header {
     transform: translateY(0px);
   }
   50% {
-    transform: translateY(-20px);
+    transform: translateY(8px);
   }
   100% {
     transform: translateY(0px);

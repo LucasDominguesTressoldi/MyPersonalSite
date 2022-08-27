@@ -1,11 +1,12 @@
 /* All main colors */
 body {
-  background: #202021;
+  background: linear-gradient(165.08deg, #000000 7.3%, #2E2D2D 92.32%);
   box-sizing: border-box;
   font-family: "Roboto", Tahoma, Verdana, sans-serif;
+  min-height: 100vh;
 }
 
-.main-container {
+.main_container {
   max-width: 80%;
   margin: 0 auto;
 }
@@ -13,6 +14,7 @@ body {
 header {
   align-items: center;
   display: flex;
+  height: 10vh;
   justify-content: space-between;
   padding: 1em 0em;
 }
@@ -40,6 +42,9 @@ header .links .buttons {
 header .links :hover {
   opacity: 90%;
 }
+header .menu {
+  display: none;
+}
 
 @media screen and (max-width: 1080px) {
   header .search a {
@@ -56,11 +61,12 @@ header .links :hover {
     display: none;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 524px) {
+  header {
+    justify-content: space-between;
+  }
   header .search {
     animation: logo-animation 2s ease-in-out infinite;
-    display: block;
-    margin: 0 auto;
     transform: translateY(0px);
   }
   header .search .text-search {
@@ -69,20 +75,20 @@ header .links :hover {
   header .links {
     display: none;
   }
+  header .menu {
+    display: flex;
+  }
 }
 @keyframes logo-animation {
   0% {
     transform: translateY(0px);
   }
   50% {
-    transform: translateY(-20px);
+    transform: translateY(8px);
   }
   100% {
     transform: translateY(0px);
   }
-}
-.home_section {
-  overflow: hidden;
 }
 .home_section .home_content {
   background-image: url("../../components/programmer-illustration.png");
@@ -91,7 +97,7 @@ header .links :hover {
   background-position: right;
   display: flex;
   flex-direction: column;
-  height: 80vh;
+  height: 90vh;
   justify-content: center;
   margin: 0 auto;
 }
@@ -106,6 +112,9 @@ header .links :hover {
 .home_section .home_content .home_text .name {
   font-size: 5em;
 }
+.home_section .home_content .home_text .home-img {
+  display: none;
+}
 .home_section .home_content .home_text .welcome {
   font-size: 2em;
   padding-top: 1.3em;
@@ -119,59 +128,140 @@ header .links :hover {
   width: 25em;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1500px) {
   .home_section .home_content {
-    background: none;
-    height: 75vh;
-  }
-  .home_section .home_content .home_text {
-    text-align: center;
-    font-size: 1.5em;
-  }
-  .home_section .home_content .home_text .name {
-    font-size: 2.7em;
-    font-weight: bold;
-    line-height: 110%;
+    background-size: 40%;
   }
   .home_section .home_content .home_text .welcome {
     line-height: 110%;
   }
+}
+@media screen and (max-width: 1200px) {
+  .home_section .home_content .home_text .name {
+    font-size: 4em;
+  }
+}
+@media screen and (max-width: 970px) {
+  .home_section {
+    display: flex;
+    text-align: center;
+  }
+  .home_section .home_content {
+    background: none;
+  }
+  .home_section .home_content .home_text .home-img {
+    display: flex;
+    padding-top: 2em;
+    margin: 0 auto;
+    width: 50%;
+  }
   .home_section .home_content .home_links {
     justify-content: center;
-    margin-top: 4em;
+  }
+}
+@media screen and (max-width: 702px) {
+  .home_section .home_content .home_text .name {
+    font-size: 3.5em;
   }
   .home_section .home_content .home_links .buttons .button {
-    margin-left: 1em;
+    margin-left: 2em;
     width: 25em;
   }
 }
-@media screen and (max-width: 642px) {
-  .home_section .home_content {
-    height: 55vh;
-  }
-  .home_section .home_content .home_text {
-    font-size: 1.2em;
-  }
-  .home_section .home_content .home_links {
-    margin-top: 2em;
-  }
-  .home_section .home_content .home_links .buttons .button {
-    width: 20em;
-  }
-}
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 618px) {
   .home_section .home_content .home_text {
     font-size: 0.9em;
   }
   .home_section .home_content .home_text .name {
     font-size: 2.5em;
   }
-  .home_section .home_content .home_links {
-    margin-top: 2em;
+  .home_section .home_content .home_links .buttons .button {
+    margin-left: 0.5em;
+    width: 20em;
+  }
+}
+@media screen and (max-width: 420px) {
+  .home_section .home_content .home_text .name {
+    font-size: 2em;
+    line-height: 110%;
+  }
+  .home_section .home_content .home_text .home-img {
+    width: 80%;
   }
   .home_section .home_content .home_links .buttons .button {
     margin-left: 0.5em;
     width: 10em;
+  }
+}
+.story {
+  align-items: center;
+  display: flex;
+}
+.story .story_section {
+  width: 50%;
+}
+.story .story_section .story_content {
+  align-items: center;
+  border: 0.2em solid rgb(56, 60, 51);
+  border-radius: 2em;
+  display: flex;
+  flex-direction: column;
+}
+.story .story_section .story_content .title_story {
+  color: #FFF;
+  font-size: 4em;
+  padding-top: 1em;
+}
+.story .story_section .story_content .story_text {
+  color: #FFF;
+  font-size: 1.5em;
+  line-height: 110%;
+  padding-top: 1em;
+  text-align: center;
+  width: 80%;
+}
+.story .book_image {
+  animation: books-animation 2s ease-in-out infinite;
+  margin-left: 2em;
+  opacity: 80%;
+  width: 50%;
+}
+
+@keyframes books-animation {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@media screen and (max-width: 1080px) {
+  .story {
+    margin-top: 1em;
+  }
+  .story .story_section {
+    width: 100%;
+  }
+  .story .story_section .story_content .title_story {
+    font-size: 4em;
+  }
+  .story .story_section .story_content .story_text {
+    font-size: 2em;
+    width: 95%;
+  }
+  .story .book_image {
+    display: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  .story .story_section .story_content .title_story {
+    font-size: 2em;
+  }
+  .story .story_section .story_content .story_text {
+    font-size: 1em;
   }
 }
 

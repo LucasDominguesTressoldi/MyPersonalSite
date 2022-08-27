@@ -1,5 +1,4 @@
 .home_section {
-  overflow: hidden;
   .home_content {
     background-image: url("../../components/programmer-illustration.png");
     background-size: contain;
@@ -7,27 +6,37 @@
     background-position: right;
     display: flex;
     flex-direction: column;
-    height: 80vh;
+    height: 90vh;
     justify-content: center;
     margin: 0 auto;
+
     .home_text {
       color: $font-color;
       line-height: 120%;
+
       .hello {
         font-size: 2em;
         padding-bottom: 1.3em;
       }
+
       .name {
         font-size: 5em;
       }
+
+      .home-img {
+        display: none;
+      }
+
       .welcome {
         font-size: 2em;
         padding-top: 1.3em;
       }
     }
+
     .home_links {
       display: flex;
       margin-top: 6em;
+
       .buttons .button {
         margin-left: 2em;
         width: 25em;
@@ -36,28 +45,66 @@
   }
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1500px) {
   .home_section {
     .home_content {
-      background: none;
-      height: 75vh;
+      background-size: 40%;
+
       .home_text {
-        text-align: center;
-        font-size: 1.5em;
-        .name {
-          font-size: 2.7em;
-          font-weight: bold;
-          line-height: 110%;
-        }
         .welcome {
           line-height: 110%;
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .home_section {
+    .home_content {
+      .home_text {
+        .name {
+          font-size: 4em;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .home_section {
+    display: flex;
+    text-align: center;
+
+    .home_content {
+      background: none;
+      .home_text {
+        .home-img {
+          display: flex;
+          padding-top: 2em;
+          margin: 0 auto;
+          width: 50%;
+        }
+      }
       .home_links {
         justify-content: center;
-        margin-top: 4em;
-        .buttons .button{
-          margin-left: 1em;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 702px) {
+  .home_section {
+    .home_content {
+      .home_text {
+        .name {
+          font-size: 3.5em;
+        }
+      }
+
+      .home_links {
+        .buttons .button {
+          margin-left: 2em;
           width: 25em;
         }
       }
@@ -65,16 +112,20 @@
   }
 }
 
-@media screen and (max-width: 642px) {
+@media screen and (max-width: 618px) {
   .home_section {
     .home_content {
-      height: 55vh;
       .home_text {
-        font-size: 1.2em;
+        font-size: 0.9em;
+
+        .name {
+          font-size: 2.5em;
+        }
       }
+
       .home_links {
-        margin-top: 2em;
-        .buttons .button{
+        .buttons .button {
+          margin-left: 0.5em;
           width: 20em;
         }
       }
@@ -82,18 +133,21 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 420px) {
   .home_section {
     .home_content {
       .home_text {
-        font-size: 0.9em;
         .name {
-          font-size: 2.5em;
+          font-size: 2em;
+          line-height: 110%;
+        }
+
+        .home-img {
+          width: 80%;
         }
       }
       .home_links {
-        margin-top: 2em;
-        .buttons .button{
+        .buttons .button {
           margin-left: 0.5em;
           width: 10em;
         }
