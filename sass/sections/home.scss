@@ -78,6 +78,7 @@
 
     .home_content {
       background: none;
+
       .home_text {
         .home-img {
           display: flex;
@@ -86,6 +87,7 @@
           width: 50%;
         }
       }
+
       .home_links {
         justify-content: center;
       }
@@ -146,11 +148,26 @@
           width: 80%;
         }
       }
+
       .home_links {
         .buttons .button {
           margin-left: 0.5em;
           width: 10em;
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .home_section {
+    .home_content {
+      .home_text {
+        margin-top: 5em;
+      }
+
+      .home_links {
+        margin-top: 1em;
       }
     }
   }

@@ -1,0 +1,41 @@
+.jobs_section {
+  padding-bottom: 2em;
+  
+  .title_jobs {
+    color: $font-color;
+    font-size: 4em;
+    margin-bottom: 1em;
+    padding-top: 0.5em;
+    text-align: center;
+  }
+
+  .cards_content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .card {
+      background-color: #2e2d2d;
+      box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.4);
+      margin: 0.5em 1em;
+      max-width: 25em;
+      min-height: 9em;
+      transition: all 0.4s ease-in-out;
+      a, p {
+        color: $font-color;
+      }
+    }
+
+    .card:hover {
+      transform: scale(1.04);
+      box-shadow: 1em 1em 0.5em rgba(0, 0, 0, 0.4);
+    }
+  }
+}
+
+@media screen and (max-width: 336px) {
+  .card {
+    width: 500px;
+  }
+}

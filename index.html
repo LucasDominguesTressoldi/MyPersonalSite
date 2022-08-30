@@ -14,17 +14,17 @@
 </head>
 <body>
   <section class="main_container">
-    <header>
+    <header id="home">
       <div class="search">
         <a href="index.html">
           <figure class="image is-64x64">
             <img src="components/L-logo.png" alt="A small logo in shape of a L in the top left">
           </figure>
         </a>
-        <a class="text-search" href="story.html">Story</a>
-        <a class="text-search" href="skills.html">Skills</a>
-        <a class="text-search" href="jobs.html">Jobs</a>
-        <a class="text-search" href="contact.html">Contact</a>
+        <a class="text-search" href="#story">Story</a>
+        <a class="text-search" href="#skills">Skills</a>
+        <a class="text-search" href="#jobs">Jobs</a>
+        <a class="text-search" href="#contact">Contact</a>
       </div>
       <div class="links">
         <figure class="image is-64x64">
@@ -42,7 +42,15 @@
         </div>
       </div>
       <div class="menu">
-        <!-- Parte do hamburguer -->
+        <figure class="burguer_icon image is-32x32">
+          <img src="components/menu-icon.png" alt="Three rows stacked, looking like a hamburger">
+        </figure>
+        <ul class="menu_content_container">
+          <li><a class="menu_content" href="#story">Story</a></li>
+          <li><a class="menu_content" href="#skills">Skills</a></li>
+          <li><a class="menu_content" href="#jobs">Jobs</a></li>
+          <li><a class="menu_content" href="#contact">Contact</a></li>
+        </ul>
       </div>
     </header>
 
@@ -69,7 +77,218 @@
           </div>
         </div>
       </section>
+
+      <section class="story">
+        <section class="story_section">
+          <div class="story_content">  
+            <h2 class="title_story" id="story">Story</h2>
+            <div class="story_text">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex error necessitatibus porro perferendis expedita magnam dolorum similique ab possimus exercitationem 
+              quis accusamus laudantium repudiandae earum, enim nemo quos, praesentium eaque! Hic nobis facilis vel suscipit voluptate beatae consequuntur eos debitis aliquid. 
+              Consequatur exercitationem eveniet facilis itaque maiores et commodi corporis, nulla eligendi reiciendis quasi vitae ipsum dolorem iusto sunt pariatur! Enim, 
+              quas natus atque ducimus aspernatur quia laboriosam dolorem repellat cum esse. Eaque cupiditate optio laudantium perspiciatis tenetur ea voluptatem suscipit. 
+              Neque aspernatur dolores non dolore perferendis animi ipsum voluptatem! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, tenetur nam 
+              expedita quasi consequuntur maiores iusto accusamus dolore totam reprehenderit sed modi aliquid quo reiciendis repellendus illum corrupti labore ullam!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius minus expedita ex suscipit eligendi, itaque, aliquam architecto alias impedit id odio eum aperiam 
+              sequi, molestiae neque? Id ab non velit!
+              </p>
+            </div>
+          </div>
+        </section>
+        <figure class="image book_image">
+          <img src="components/story-img.png" alt="A programmer sit">
+        </figure>
+      </section>
+
+      <section class="skills_section">
+        <figure class="image aside_img">
+          <img src="components/skills-img.png" alt="Two gears with a sheet representing lines of code behind">
+        </figure>
+        <div class="skills_content">  
+          <h2 class="title_skills" id="skills">Skills</h2>
+          <div class="skills_itens">
+            <div class="skill_icon html">
+              <figure class="image is-64x64">
+                <img src="components/html-icon.png" alt="A small html logo">
+              </figure>
+              <div class="alignment">
+                <h3>HTML</h3>
+                <progress class="progress is-link" value="60" max="100">60%</progress>
+              </div>
+            </div>
+            <div class="skill_icon css">
+              <figure class="image is-64x64">
+                <img src="components/css-icon.png" alt="A small css logo">
+              </figure>
+              <div class="alignment">
+                <h3>CSS</h3>
+                <progress class="progress is-link" value="60" max="100">60%</progress>
+              </div>
+            </div>
+            <div class="skill_icon javascript">
+              <figure class="image is-64x64">
+                <img src="components/javascript-icon.png" alt="A small javascript logo">
+              </figure>
+              <div class="alignment">
+                <h3>Javascript</h3>
+                <progress class="progress is-link" value="20" max="100">20%</progress>
+              </div>
+            </div>
+            <div class="skill_icon python">
+              <figure class="image is-64x64">
+                <img src="components/python-icon.png" alt="A small python logo">
+              </figure>
+              <div class="alignment">
+                <h3>Python</h3>
+                <progress class="progress is-link" value="40" max="100">40%</progress>
+              </div>
+            </div>
+            <div class="skill_icon sql">
+              <figure class="image is-96x96">
+                <img src="components/sql-icon.png" alt="A small sql logo">
+              </figure>
+              <div class="alignment">
+                <h3>SQL</h3>
+                <progress class="progress is-link" value="30" max="100">30%</progress>
+              </div>
+            </div>
+            <div class="skill_icon excel">
+              <figure class="image is-64x64">
+                <img src="components/excelvba-icon.png" alt="A small excel logo">
+              </figure>
+              <div class="alignment">
+                <h3>VBA</h3>
+                <progress class="progress is-link" value="15" max="100">15%</progress>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="jobs_section">
+        <div class="jobs_content">
+          <h2 class="title_jobs" id="jobs">Jobs</h2>
+          <div class="cards_content">
+            <div class="card">
+              <a href="#">
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-left">
+                      <figure class="image is-48x48">
+                        <img src="components/portfolio-icon.png" alt="A small suitcase">
+                      </figure>
+                    </div>
+                    <div class="media-content">
+                      <p class="title is-4">My Personal Website | 2021</p>
+                      <p class="subtitle is-6"></p>
+                    </div>
+                  </div>
+                  <div class="content">
+                    In order to provide a better look of my story and jobs<br>to those who are interested in me, I developed this website.
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="#">
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-left">
+                      <figure class="image is-48x48">
+                        <img src="components/python-icon.png" alt="A small logo of a programming language called Python">
+                      </figure>
+                    </div>
+                    <div class="media-content">
+                      <p class="title is-4">Forest Inventory Calculator | 2021-2022</p>
+                      <p class="subtitle is-6"></p>
+                    </div>
+                  </div>
+                  <div class="content">
+                    When I was working at Sylvamo Brasil, <br>I developed a Python program to calculate forest inventory.
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="#">
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-left">
+                      <figure class="image is-48x48">
+                        <img src="components/comingsoon-icon.png" alt="A small image with 'coming soon' written on it">
+                      </figure>
+                    </div>
+                    <div class="media-content">
+                      <p class="title is-4">Coming Soon | YYYY</p>
+                      <p class="subtitle is-6"></p>
+                    </div>
+                  </div>
+                  <div class="content">
+                    Coming Soon. Coming Soon. Coming Soon.
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact_section">
+        <h2 class="title_contact" id="contact">Contact</h2>
+        <form action="https://formsubmit.co/tressoldi.lucas@gmail.com" method="POST">
+          <div class="field">
+            <label class="label">Name</label>
+            <div class="control">
+              <input class="input" type="text" name="name" placeholder="e.g Alex Smith" required>
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Email</label>
+            <div class="control">
+              <input class="input" type="email" name="email" placeholder="e.g. alexsmith@gmail.com" required>
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Message</label>
+            <div class="control">
+              <textarea class="textarea" name="text_area" placeholder="Type here..." required></textarea>
+            </div>
+          </div>
+          <div class="field">
+            <div class="control">
+              <button class="button is-link" type="submit">Submit</button>
+            </div>
+          </div>
+        </form>
+      </section>
+
+      <footer class="footer">
+        <div class="content">
+          <div class="footer_logo">
+            <a href="#home" class="image is-64x64">
+              <img src="components/L-logo.png" alt="A small logo in shape of a L in the top left">
+            </a>
+          </div>
+          <div class="footer_links">
+            <a class="image is-64x64" href="https://github.com/LucasDominguesTressoldi" target="_blank">
+              <img src="components/github-icon.png" alt="A small Github logo. A black circle with a white cat inside">
+            </a>
+            <a class="image is-32x32" href="index.html">
+              <img src="components/home-icon.png" alt="A small white house between Github and Linkedin icons">
+            </a>
+            <a name="linkedin" class="image is-48x48" href="https://www.linkedin.com/in/lucas-tressoldi-407a5a207/" target="_blank">
+              <img src="components/linkedin-icon.png" alt="A small Linkedin logo. A blue square with an I and a N inside">
+            </a>
+          </div>
+          <div class="contacts">
+            <p>Contact Me:</p>
+            <p>tressoldi.lucas@gmail.com</p>
+            <p>+55(019)99786-1103</p>
+          </div>
+        </div>
+      </footer>
     </main>
   </section>
+  <script src="./js/showMenu.js"></script>
 </body>
 </html>

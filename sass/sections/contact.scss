@@ -1,0 +1,29 @@
+.contact_section {
+  padding-bottom: 2em;
+
+  .title_contact {
+    color: $font-color;
+    font-size: 4em;
+    margin-bottom: 1em;
+    text-align: center;
+  }
+
+  .field {
+    margin: 0 auto;
+    padding-bottom: 1em;
+    width: 50%;
+    .label {
+      color: $font-color;
+    }
+  }
+
+  .control {
+    input::placeholder, .textarea::placeholder {
+      color: #2e2d2d;
+    }
+    
+    .button {
+      width: 100%;
+    }
+  }
+}

@@ -78,7 +78,28 @@ header .menu {
   header .menu {
     display: flex;
   }
+  header .menu .menu_content_container {
+    align-items: center;
+    background-color: rgb(56, 60, 51);
+    display: flex;
+    height: 3vh;
+    justify-content: center;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 5em;
+    transition: 500ms;
+    width: 100%;
+  }
+  header .menu .menu_content_container .menu_content {
+    color: #FFF;
+    margin-left: 2em;
+  }
 }
+.show_menu {
+  opacity: 1 !important;
+}
+
 @keyframes logo-animation {
   0% {
     transform: translateY(0px);
@@ -193,9 +214,19 @@ header .menu {
     width: 10em;
   }
 }
+@media screen and (max-width: 375px) {
+  .home_section .home_content .home_text {
+    margin-top: 5em;
+  }
+  .home_section .home_content .home_links {
+    margin-top: 1em;
+  }
+}
 .story {
   align-items: center;
   display: flex;
+  flex-direction: row-reverse;
+  margin-top: 2em;
 }
 .story .story_section {
   width: 50%;
@@ -262,6 +293,179 @@ header .menu {
   }
   .story .story_section .story_content .story_text {
     font-size: 1em;
+  }
+}
+.skills_section {
+  align-items: center;
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 2em 0;
+}
+.skills_section .aside_img {
+  animation: skills-animation 2s ease-in-out infinite;
+  width: 40%;
+}
+.skills_section .skills_content {
+  align-items: center;
+  border: 0.2em solid rgb(56, 60, 51);
+  border-radius: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 60%;
+}
+.skills_section .skills_content .title_skills {
+  color: #FFF;
+  font-size: 3em;
+  padding-top: 1.5em;
+  margin-bottom: 1em;
+}
+.skills_section .skills_content .skills_itens {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.skills_section .skills_content .skills_itens .skill_icon {
+  color: #FFF;
+  display: flex;
+  font-size: 1.2em;
+  margin-right: 2em;
+  margin-bottom: 5em;
+  width: 15em;
+}
+.skills_section .skills_content .skills_itens .alignment {
+  align-items: right;
+  flex-direction: column;
+  justify-content: right;
+  padding-left: 10px;
+  text-align: left;
+}
+.skills_section .skills_content .skills_itens .alignment h3 {
+  padding-bottom: 0.5em;
+}
+.skills_section .skills_content .skills_itens .alignment .progress {
+  height: 30px;
+  width: 210px;
+}
+
+@keyframes skills-animation {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@media screen and (max-width: 1530px) {
+  .skills_section .aside_img {
+    display: none;
+  }
+  .skills_section .skills_content {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 406px) {
+  .skills_section .skills_content {
+    border: none;
+  }
+  .skills_section .skills_content .skills_itens .skill_icon {
+    margin-right: 0;
+  }
+}
+.jobs_section {
+  padding-bottom: 2em;
+}
+.jobs_section .title_jobs {
+  color: #FFF;
+  font-size: 4em;
+  margin-bottom: 1em;
+  padding-top: 0.5em;
+  text-align: center;
+}
+.jobs_section .cards_content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.jobs_section .cards_content .card {
+  background-color: #2e2d2d;
+  box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.4);
+  margin: 0.5em 1em;
+  max-width: 25em;
+  min-height: 9em;
+  transition: all 0.4s ease-in-out;
+}
+.jobs_section .cards_content .card a, .jobs_section .cards_content .card p {
+  color: #FFF;
+}
+.jobs_section .cards_content .card:hover {
+  transform: scale(1.04);
+  box-shadow: 1em 1em 0.5em rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (max-width: 336px) {
+  .card {
+    width: 500px;
+  }
+}
+.contact_section {
+  padding-bottom: 2em;
+}
+.contact_section .title_contact {
+  color: #FFF;
+  font-size: 4em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+.contact_section .field {
+  margin: 0 auto;
+  padding-bottom: 1em;
+  width: 50%;
+}
+.contact_section .field .label {
+  color: #FFF;
+}
+.contact_section .control input::placeholder, .contact_section .control .textarea::placeholder {
+  color: #2e2d2d;
+}
+.contact_section .control .button {
+  width: 100%;
+}
+
+.footer {
+  display: flex;
+  border-radius: 2em 2em 0 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1em 0.5em;
+}
+.footer .content {
+  align-items: center;
+  color: #FFF;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.footer .content .footer_links {
+  align-items: center;
+  display: flex;
+  margin: 0 0.5em;
+}
+.footer .content .footer_links [name=linkedin] {
+  margin-left: 0.5em;
+}
+
+@media screen and (max-width: 414px) {
+  .footer {
+    padding: 0;
+  }
+  .footer .contacts {
+    display: none;
   }
 }
 
