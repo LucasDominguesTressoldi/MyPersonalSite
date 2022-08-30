@@ -112,7 +112,7 @@ header .menu {
   }
 }
 .home_section .home_content {
-  background-image: url("../../components/programmer-illustration.png");
+  background-image: url("../components/programmer-illustration.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
@@ -426,7 +426,7 @@ header .menu {
 .contact_section .field {
   margin: 0 auto;
   padding-bottom: 1em;
-  width: 50%;
+  width: 80%;
 }
 .contact_section .field .label {
   color: #FFF;
