@@ -237,6 +237,7 @@ header .menu {
   border-radius: 2em;
   display: flex;
   flex-direction: column;
+  padding-bottom: 2em;
 }
 .story .story_section .story_content .title_story {
   color: #FFF;
